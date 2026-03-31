@@ -641,7 +641,7 @@ Higher latency.
 Medium maturity.
 Recommended for asynchronous delegated authorization where resource owner policy is central.
 
-**Verifiable Credentials (W3C VC 2.0) with DIDs **— Cryptographically verifiable.
+**Verifiable Credentials (W3C VC 2.0) with DIDs** — Cryptographically verifiable.
 Strong provenance for issuer and holder.
 Variable constraint support depending on credential profile.
 Low to medium verification cost.
