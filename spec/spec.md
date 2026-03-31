@@ -1,21 +1,22 @@
 # Governance of Delegated Authority Problem Space Report v0.1 Editor's Draft
 
-**Specification Status:** Pre-Draft
+Specification Status: Pre-Draft
 
-**Latest Draft:**
+Latest Draft:
 [identity.foundation/delegated-authority-report](https://identity.foundation/delegated-authority-report)
 
-**Ratified Versions:**
+Ratified Versions:
 
-**Editors:**
+Editors:
 
-* Alan Karp (@alanhkarp)
+- Alan Karp (@alanhkarp)
 
-**Authors:**
+Authors:
 
-* Debbie Bucci
+- Debbie Bucci
+- Victor Lu
 
-**Participate:**
+Participate:
 ~ [GitHub repo](https://github.com/decentralized-identity/governance-of-delegated-authority-report)
 ~ [File a bug](https://github.com/decentralized-identity/governance-of-delegated-authority-report/issues)
 ~ [Commit history](https://github.com/decentralized-identity/governance-of-delegated-authority-report/commits/main)
@@ -47,17 +48,17 @@ As deployment has expanded, automated components operate as participants within 
 
 ### Why governance of authority is distinct from AI functionality or model accuracy
 
-Discussion of automated systems commonly focuses on **functionality** — whether a system can perform a task — or on performance — accuracy, bias, or explainability.
-These considerations do not address a distinct governance issue — **authority**.
+Discussion of automated systems commonly focuses on functionality — whether a system can perform a task — or on performance — accuracy, bias, or explainability.
+These considerations do not address a distinct governance issue — authority.
 Functionality describes what a system is able to do; authority describes the legitimate right to act.
 A system may perform a task accurately while operating outside the scope of its granted authority.
 Conversely, a system operating within its authorized scope may still produce undesirable outcomes if that scope was poorly defined or insufficiently constrained.
 Governance of authority addresses the structural conditions under which automated systems are permitted to act.
 
-Existing governance approaches often assume that the **scope of authority** required for a task can be defined *in advance*.
+Existing governance approaches often assume that the scope of authority required for a task can be defined in advance.
 In distributed automated environments, however, actions may occur across multiple services, organizational boundaries, and execution layers where the full sequence of operational steps cannot always be anticipated at design time.
 Governance frameworks must therefore account for conditions in which authority boundaries, delegation scope, and enforcement mechanisms must remain explicit and verifiable even as automated processes operate dynamically.
-The challenge is not the functionality of automated systems but ensuring that delegation of authority remains **accountable, constrained,** and **consistent** with the intent of the principal that granted it.
+The challenge is not the functionality of automated systems but ensuring that delegation of authority remains accountable, constrained, and consistent with the intent of the principal that granted it.
 
 ## Authority in Sociotechnical Systems
 
@@ -66,25 +67,25 @@ The challenge is not the functionality of automated systems but ensuring that de
 A person may hold authority by virtue of a role, contractual relationship, legal instrument, or legally recognized relationship, such as a parent acting on behalf of a child.
 
 An organization may hold authority by statute, agreement, or the terms under which it operates within a regulated domain.
-These sources form the *foundation* from which delegated authority derives.
+These sources form the foundation from which delegated authority derives.
 No automated system generates authority of its own; it can only exercise authority granted by a principal who holds, or has itself been delegated, the relevant right to act.
-The **provenance** of authority determines the conditions under which it is legitimate, the constraints that attach to it, and the obligations that arise when it is exercised.
+The provenance of authority determines the conditions under which it is legitimate, the constraints that attach to it, and the obligations that arise when it is exercised.
 
 ### Representation of authority in technical systems
 
 When authority is exercised through automated systems, it must be represented in forms those systems can process.
 Credentials, tokens, signed assertions, and access control configurations are common mechanisms for expressing authority technically.
 These representations necessarily reduce the richer legal and organizational structures from which that authority derives.
-A credential may assert that a system is authorized to perform a class of actions without capturing the *conditions, purposes, or limitations* governing that authorization in its originating context.
+A credential may assert that a system is authorized to perform a class of actions without capturing the conditions, purposes, or limitations governing that authorization in its originating context.
 The gap between the scope of authority as understood by its originating principal and its representation within a technical system is a persistent governance challenge.
 Where that gap is significant, systems may act in ways technically consistent with their authorization while departing from the intent of the original grant.
 
 ### Distinguishing capability from authority
 
-The distinction between **capability** and **authority** is analytically important but frequently obscured in practice.
+The distinction between capability and authority is analytically important but frequently obscured in practice.
 A system with the technical means to perform an action may do so in the absence of explicit controls, regardless of whether authority for that action has been granted.
 In human governance contexts, this distinction is maintained through rules, professional norms, and the accountability of individuals who understand that the capacity to act does not constitute permission to act.
-In automated systems, the distinction must be maintained through *explicit design*: access controls, authorization checks, scope constraints, and enforcement mechanisms.
+In automated systems, the distinction must be maintained through explicit design: access controls, authorization checks, scope constraints, and enforcement mechanisms.
 Where these mechanisms are absent, incomplete, or inconsistently applied, capability and authority collapse, and systems act to the limits of what they can do rather than what they are permitted to do.
 
 ## Delegation of Authority
@@ -95,7 +96,7 @@ Delegation is the process by which a principal permits another party to act on i
 In operational environments, authority is rarely exercised solely by the entity that originally holds it.
 Instead, it is delegated so that tasks and decisions can be performed by others within an organizational or technical system.
 
-Delegation establishes **chains of responsibility**.
+Delegation establishes chains of responsibility.
 Each participant exercises authority that originates elsewhere and is bounded by the conditions under which it was granted.
 The legitimacy of any delegated action depends on the integrity of this chain.
 Where the delegation chain between the acting entity and the original principal cannot be reconstructed, the basis for the authority being exercised becomes unclear.
@@ -107,10 +108,10 @@ Maintaining continuity of authority across these relationships helps ensure that
 Delegated authority is rarely equivalent to the authority held by the delegating principal.
 Delegation is typically constrained so that the delegated actor exercises only a limited subset of that authority — a process referred to as attenuation.
 
-Attenuation limits the *scope* within which delegated authority may be exercised.
+Attenuation limits the scope within which delegated authority may be exercised.
 The delegated actor may be permitted to perform specific actions, operate within defined roles, or act only under particular conditions.
 These constraints reduce the risk that delegated actors — whether human or automated — exercise authority beyond the intent of the grant.
-Governance frameworks should promote the principle that delegated authority be limited to the **minimum scope necessary** for the intended purpose.
+Governance frameworks should promote the principle that delegated authority be limited to the minimum scope necessary for the intended purpose.
 
 Without clear scope limitations, authority may expand as it propagates through operational systems.
 Governance mechanisms must therefore ensure that the limits attached to delegated authority remain visible and enforceable as authority moves across technical and organizational boundaries.
@@ -125,7 +126,7 @@ Delegated authority is bounded in time or circumstance.
 A delegation may apply for a defined duration, for completion of a specific task, or until particular conditions are met.
 Effective governance therefore requires mechanisms that define not only how authority is granted but how it expires or is withdrawn.
 
-**Revocation** is particularly important when authority propagates through distributed systems.
+Revocation is particularly important when authority propagates through distributed systems.
 When a delegation is withdrawn or reaches its termination point, the component responsible for evaluating whether a request is authorized must recognize that change and prevent further actions under the previously granted authority.
 Constraining scope, defining duration, and enabling revocation ensures that delegated actions remain aligned with the intent of the granting principal.
 
@@ -136,7 +137,7 @@ Constraining scope, defining duration, and enabling revocation ensures that dele
 Automated systems participate in decision and execution pipelines in a variety of operational roles.
 At one end, a system may provide analysis or recommendations that a human actor evaluates before action is taken.
 At the other, a system may execute actions directly, with human involvement limited to initial configuration.
-Between these poles are intermediate arrangements in which automated components *prepare, filter, prioritize, or route decisions* in ways that **shape outcomes** without formally making them.
+Between these poles are intermediate arrangements in which automated components prepare, filter, prioritize, or route decisions in ways that shape outcomes without formally making them.
 
 Understanding the governance implications of delegated authority requires clarity about which role an automated system occupies.
 Systems that provide advice influence decisions but do not exercise authority.
@@ -148,22 +149,22 @@ The distinction between advisory participation and operational execution is ther
 Where an automated system is authorized to take actions on behalf of a principal, it operates as a delegate in the sense described in Section 3.
 The authority it exercises is derived from a grant made by a principal who holds, or has itself been delegated, the relevant right to act.
 
-The **scope** of the system’s authority is bounded by the **terms** of the delegation.
+The scope of the system’s authority is bounded by the terms of the delegation.
 Actions outside that scope are not authorized, regardless of whether the system is technically capable of performing them.
 Conditions attached to the delegation — including purpose limitations, contextual constraints, or policy requirements — apply to the system’s actions in the same way they would apply to a human delegate in an equivalent role.
 
-Where automated agents operate **across multiple** technical systems, the delegated authority under which they act must remain recognizable and enforceable throughout the operational chain.
+Where automated agents operate across multiple technical systems, the delegated authority under which they act must remain recognizable and enforceable throughout the operational chain.
 The automated nature of the actor does not alter the governance structure but affects the mechanisms through which it must be implemented and enforced.
 
 ### Limits of machine autonomy within governance frameworks
 
-Governance frameworks historically assumed delegates would be *human* actors capable of interpreting ambiguity, seeking clarification, or declining to act when the limits of their authority were unclear.
+Governance frameworks historically assumed delegates would be human actors capable of interpreting ambiguity, seeking clarification, or declining to act when the limits of their authority were unclear.
 Automated systems do not replicate this form of judgment; they operate within the rules and parameters provided and act to the extent those rules permit.
 
 This has two implications for governance.
-First, **explicit specification** of authority scope, conditions, and limits becomes more *consequential*.
+First, explicit specification of authority scope, conditions, and limits becomes more consequential.
 Ambiguities that a human delegate might resolve through judgment may result in unintended actions when exercised by an automated system.
-Second, automated systems must operate within **defined boundaries** that determine when autonomous action is permitted and when human oversight must be engaged.
+Second, automated systems must operate within defined boundaries that determine when autonomous action is permitted and when human oversight must be engaged.
 
 Maintaining these boundaries ensures that automated agents remain instruments of delegated authority rather than independent decision-makers, preserving the principle that machine actions are extensions of human or institutional authority.
 In some cases, operational conditions may create a need for additional authority beyond that originally granted.
@@ -173,17 +174,17 @@ Governance frameworks should ensure that any such expansion is subject to explic
 
 ### Separation of analysis, recommendation, and execution
 
-In distributed systems, the functions of **analysis**, **recommendation**, and **execution** are often performed by different components across separate services or organizational contexts.
+In distributed systems, the functions of analysis, recommendation, and execution are often performed by different components across separate services or organizational contexts.
 This separation has governance significance because each function relates differently to authority.
 Analysis and recommendation influence decisions by producing information or suggesting possible actions.
 Execution brings authority to bear by performing actions that may alter data, initiate transactions, or trigger downstream effects.
 
-Governance frameworks should *reflect* this deep and consequential distinction.
+Governance frameworks should reflect this deep and consequential distinction.
 Systems that analyze information or generate recommendations do not exercise authority to act.
 Authority is exercised only when a system performs an operation that commits resources or changes the state of its operational environment.
-Maintaining a clear boundary between *advisory* and *executive* functions helps prevent analytical outputs from being treated as authorized actions.
+Maintaining a clear boundary between advisory and executive functions helps prevent analytical outputs from being treated as authorized actions.
 
-Where analysis and execution are performed by the same component without clear separation, the risk of *premature* or *unauthorized* action increases.
+Where analysis and execution are performed by the same component without clear separation, the risk of premature or unauthorized action increases.
 Architectural separation of these functions, combined with explicit authority controls at the point of execution, supports clearer accountability and more effective oversight.
 
 ### Controlled propagation of delegated authority across system boundaries
@@ -191,11 +192,11 @@ Architectural separation of these functions, combined with explicit authority co
 When delegated authority passes from one system to another, the terms of the delegation should travel with it.
 Where they do not, a receiving system must have other means of determining the scope of the authority, the conditions attached to it, and the originating principal from whom it derives.
 
-In practice, the conditions attached to a delegation are often only *partially* represented as authority moves between systems.
+In practice, the conditions attached to a delegation are often only partially represented as authority moves between systems.
 When a receiving system acts on an incomplete representation, it may authorize actions that extend beyond the original intent of the principal.
 
 Effective governance therefore requires mechanisms that preserve the continuity of delegated authority across system boundaries.
-Receiving systems must evaluate not only whether authority has been asserted, but whether the scope and conditions attached to it remain **applicable** to the action being requested.
+Receiving systems must evaluate not only whether authority has been asserted, but whether the scope and conditions attached to it remain applicable to the action being requested.
 
 ### Managing authority across heterogeneous systems and organizations
 
@@ -203,11 +204,11 @@ Distributed environments frequently involve systems operated by different organi
 Each organization may represent and enforce delegated authority according to its own governance policies.
 When authority moves between these environments, differences in interpretation may create enforcement gaps or misunderstandings about what actions are permitted.
 
-Managing delegated authority across heterogeneous systems requires a **shared understanding** of how authority is *expressed*, what *constraints* accompany it, and how those constraints should be *interpreted* by participating systems.
+Managing delegated authority across heterogeneous systems requires a shared understanding of how authority is expressed, what constraints accompany it, and how those constraints should be interpreted by participating systems.
 Interoperability in this context is therefore not only a technical concern but also a serious governance concern.
 Systems must interpret the constraints and conditions attached to delegated authority consistently if delegation chains are to remain aligned with delegator policy across organizational and technical boundaries.
 Without this shared understanding, systems may enforce the constraints and conditions attached to delegated authority inconsistently, authorizing actions that do not reflect the policy preferences of the delegator.
-Identity and authorization *frameworks* that support the representation and communication of delegated authority across organizational boundaries are discussed further in the  [Implications](#implications-for-identity-and-authorization-frameworks) section.
+Identity and authorization frameworks that support the representation and communication of delegated authority across organizational boundaries are discussed further in the  [Implications](#implications-for-identity-and-authorization-frameworks) section.
 
 ## Provenance, Traceability, and Accountability
 
@@ -294,7 +295,7 @@ Where automated systems include LLM-based components, this translation challenge
 LLM agents determine their approach to a task at runtime, meaning the permissions required may not be fully anticipatable at policy definition time.
 Governance frameworks must therefore address how policy constraints can be expressed and enforced dynamically, adapting to the agent's evolving permission requirements without requiring human intervention at each step.
 
-Where policies are **ambiguous**, translation may resolve ambiguity in ways that differ from the intent of the policy-making body.
+Where policies are ambiguous, translation may resolve ambiguity in ways that differ from the intent of the policy-making body.
 Where policies evolve, operational rules may not be updated consistently.
 Governance frameworks should therefore establish clear processes for translating organizational policy into enforceable system rules and ensuring those rules remain aligned with the policy they implement.
 Not all policy constraints are equally enforceable in practice.
@@ -430,7 +431,7 @@ Distributed identity systems provide mechanisms for asserting and verifying iden
 Extending these mechanisms to support delegated authority requires more than identity verification.
 It requires the ability to represent the scope of a delegation, the conditions attached to it, and the chain of principals through which it derives.
 
-Current identity and authorization frameworks vary in the degree to which they support *rich delegation models*.
+Current identity and authorization frameworks vary in the degree to which they support rich delegation models.
 Some provide mechanisms for expressing that a system is acting on behalf of another party; fewer convey the limits of that authorization or the policy conditions governing its exercise.
 
 Governance frameworks should therefore assess whether identity and authorization mechanisms in use can represent the delegation relationships that operational systems rely upon, and identify gaps where richer representation is required.
@@ -469,7 +470,7 @@ Standards work in this area should address both dimensions, recognizing that tec
 ### Operationalizing Governance Principles
 
 Translating governance requirements into system architecture
-The governance principles discussed in this paper — authority provenance, delegation scope, policy enforcement, accountability, and human oversight — must ultimately be expressed in the **architecture** of operational systems.
+The governance principles discussed in this paper — authority provenance, delegation scope, policy enforcement, accountability, and human oversight — must ultimately be expressed in the architecture of operational systems.
 This translation is not automatic.
 Governance requirements articulated at the policy level do not directly specify system behavior; they must be interpreted and implemented through deliberate architectural choices.
 
@@ -514,7 +515,7 @@ Where such mechanisms remain incomplete or inconsistent, governance frameworks s
 
 ### The need for explicit governance of delegated authority in AI-mediated systems
 
-As automated systems assume operational roles in decision and execution pipelines, governance of delegated authority becomes **more** demanding rather than **less**.
+As automated systems assume operational roles in decision and execution pipelines, governance of delegated authority becomes more demanding rather than less.
 The structures through which authority is granted, constrained, and enforced must be made explicit in ways that human governance could previously leave implicit.
 Accountability mechanisms must be designed into systems from the outset rather than reconstructed after the fact.
 Oversight arrangements that ensure automated action remains an expression of human and institutional intent must be embedded in system architecture rather than assumed to follow from the presence of human actors elsewhere in the organization.
@@ -604,7 +605,7 @@ The table below maps each section of the paper to the most directly relevant sta
 
 The following summarizes commonly deployed and emerging approaches for representing delegated authority, evaluated against the paper's governance requirements.
 
-**OAuth 2.0 bearer tokens with introspection** — Machine evaluable via authorization server.
+OAuth 2.0 bearer tokens with introspection — Machine evaluable via authorization server.
 Partial provenance through server-side records.
 Moderate constraint support via scopes and introspection claims.
 Higher latency due to online dependency.
@@ -613,35 +614,35 @@ Widely deployed in existing systems; however, bearer tokens are possession-based
 For governance-critical delegated authority contexts, sender-constrained alternatives such as DPoP-bound tokens are preferred.
 Recommended only where revocation and real-time state checks are required and sender-constraining mechanisms are not yet available.
 
-**OAuth 2.0 JWT access tokens (RFC 9068)** — Self-contained and machine evaluable.
+OAuth 2.0 JWT access tokens (RFC 9068) — Self-contained and machine evaluable.
 Partial provenance via actor and audit ID claims.
 Moderate constraint support via claims and scopes.
 Lower latency through offline verification, though cryptographic validation cost may become a consideration at high call volumes.
 High maturity.
 Recommended for low-latency microservices where local validation is sufficient and cryptographic overhead is within acceptable bounds.
 
-**OAuth 2.0 Token Exchange (RFC 8693) with actor chain** — Machine evaluable.
+OAuth 2.0 Token Exchange (RFC 8693) with actor chain — Machine evaluable.
 Strong provenance through explicit delegation trail.
 Moderate constraint support depending on token content.
 Medium latency due to authorization server exchange step.
 High maturity.
 Recommended for on-behalf-of flows and audit-critical delegation chains.
 
-**OAuth Rich Authorization Requests (RFC 9396)** — Machine evaluable with structured authorization details.
+OAuth Rich Authorization Requests (RFC 9396) — Machine evaluable with structured authorization details.
 Indirect provenance through logged request artifacts.
 Strong constraint support for structured purpose-bound access.
 Medium latency.
 High maturity.
 Recommended for payments, transactions, and fine-grained access requests.
 
-**User-Managed Access (UMA 2.0)** — Machine evaluable through authorization server mediated policies.
+User-Managed Access (UMA 2.0) — Machine evaluable through authorization server mediated policies.
 Moderate provenance through ticket flows.
 Strong constraint support through policy-driven grants.
 Higher latency.
 Medium maturity.
 Recommended for asynchronous delegated authorization where resource owner policy is central.
 
-**Verifiable Credentials (W3C VC 2.0) with DIDs** — Cryptographically verifiable.
+Verifiable Credentials (W3C VC 2.0) with DIDs — Cryptographically verifiable.
 Strong provenance for issuer and holder.
 Variable constraint support depending on credential profile.
 Low to medium verification cost.
@@ -649,21 +650,21 @@ Medium maturity.
 Verifiable Credentials are designed for making claims about a subject — such as organizational role, certification, or identity attributes — rather than for expressing permissions directly.
 They are appropriate for cross-organizational attestations of authority and regulated identity assertions requiring portability, where the credential conveys who a party is or what they have demonstrated, not what they are permitted to do.
 
-**Caveated tokens (Macaroons)** — Machine evaluable through caveat checking.
+Caveated tokens (Macaroons) — Machine evaluable through caveat checking.
 Moderate provenance depending on implementation.
 Strong contextual constraint support.
 Low to medium latency.
 Limited production deployment; while the concept is well-established and the design well-documented, Macaroons have not achieved broad industry adoption and should be evaluated carefully before use in governance-critical systems.
 Recommended for delegation with attenuation across services and least-privilege token construction where implementation maturity has been verified.
 
-**Biscuit attenuating tokens** — Machine evaluable with embedded logic and offline attenuation.
+Biscuit attenuating tokens — Machine evaluable with embedded logic and offline attenuation.
 Moderate provenance through token blocks.
 Strong fine-grained condition support.
 Low to medium latency.
 Emerging maturity.
 Recommended for multi-tenant and microservice authorization where downstream attenuation is desirable.
 
-**Relationship-based authorization (Zanzibar-style)** — Machine evaluable through graph query.
+Relationship-based authorization (Zanzibar-style) — Machine evaluable through graph query.
 Strong provenance through centralized relation state and audit trails.
 Strong expressive relation model support.
 Medium latency due to query dependency.
@@ -702,35 +703,35 @@ Where an action is denied, the invoker should be notified that the request was n
 
 The following areas represent active development relevant to the governance requirements identified in this paper.
 
-**Delegation semantics profiles** — OAuth Token Exchange supports actor chains but interoperable meaning for actor attributes and constraint claims remains under-specified.
+Delegation semantics profiles — OAuth Token Exchange supports actor chains but interoperable meaning for actor attributes and constraint claims remains under-specified.
 In JWT-based delegation, the subject (sub claim) identifies the principal on whose behalf the token is issued, while the actor (act claim, RFC 8693) identifies the delegate actively presenting and exercising the token; in delegated authority contexts these are distinct, and conflating them obscures accountability.
 Profiles and conformance tests that clarify this distinction and establish interoperable meaning for actor attributes and constraint claims represent a practical standards gap.
 
-**Authorization vocabulary standardization** — Rich Authorization Requests enable structured authorization details but cross-domain schemas require shared profiles to avoid valid-but-different-meaning failures across organizations.
+Authorization vocabulary standardization — Rich Authorization Requests enable structured authorization details but cross-domain schemas require shared profiles to avoid valid-but-different-meaning failures across organizations.
 Credential ecosystem convergence — W3C VC 2.0, OpenID4VCI and OpenID4VP, and IETF SD-JWT VC efforts are converging on interoperable credential structures.
 The remaining gap is authorization semantics and constraint evaluation across organizational boundaries.
 
-**AI-specific threat modeling** — OWASP LLM Top 10 and MITRE ATLAS provide evolving taxonomies for delegated tool use and prompt injection.
+AI-specific threat modeling — OWASP LLM Top 10 and MITRE ATLAS provide evolving taxonomies for delegated tool use and prompt injection.
 The standards question is how to encode tool authority and execution constraints in interoperable forms.
 Transparency and tamper-evident records — IETF SCITT is developing architectures and receipt profiles for transparent verifiable audit trails potentially applicable to delegation provenance and evidence chains.
 
-**Next-generation authorization protocols** — GNAP continues to evolve delegated authorization concepts beyond OAuth's historical constraints.
+Next-generation authorization protocols — GNAP continues to evolve delegated authorization concepts beyond OAuth's historical constraints.
 Monitor maturity and ecosystem adoption before standardizing for governance-critical systems.
 
-**Operational security guidance evolution** — The OAuth security best current practice RFC 9700 and ongoing update drafts indicate that threat models and recommended defaults evolve.
+Operational security guidance evolution — The OAuth security best current practice RFC 9700 and ongoing update drafts indicate that threat models and recommended defaults evolve.
 Governance programs should include a standards-monitoring control.
 
 ## Patent Policy
 
 The Decentralized Identity Foundation has adopted the W3C Patent Policy (2004), as detailed below:
 
-- **Licensing Commitment.** Each contributor agrees to make available any of its
+- Licensing Commitment. Each contributor agrees to make available any of its
   Essential Claims, as defined in the W3C Patent Policy (available at
   http://www.w3.org/Consortium/Patent-Policy-20040205), under the W3C RF licensing
   requirements Section 5 (http://www.w3.org/Consortium/Patent-Policy-20040205), as
   if the contribution was contained in or associated with a W3C Recommendation.
 
-- **For Exclusion.** Prior to committing any code, bug reports, pull requests, or
+- For Exclusion. Prior to committing any code, bug reports, pull requests, or
   other forms of contribution, a contributor may exclude Essential Claims from its
   licensing commitments under this agreement by providing written notice of that
   intent to DIF's Executive Director (and must received confirmation of receipt
