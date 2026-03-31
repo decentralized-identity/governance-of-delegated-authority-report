@@ -680,7 +680,7 @@ Throughout this chain, organizational policy governs what is requested.
 An authorization evaluation component (PDP) receives policy intent and evaluates whether proposed actions are authorized.
 Enforcement points (PEP) at each service execution boundary receive the authorization decision and permit or block the action accordingly.
 
-![flow diagram of a delegation chain](./assets/chain_flow_diagram.jpg)
+![flow diagram of a delegation chain](https://github.com/decentralized-identity/governance-of-delegated-authority-report/blob/main/assets/chain_flow_diagram.jpg?raw=true)
 
 ### Authorization Decision and Fail-Safe Flow
 
@@ -696,7 +696,7 @@ Actions that warrant human judgment are routed to a human oversight queue.
 All executed actions are logged with their authority basis, policy version, and outcome.
 Where an action is denied, the invoker should be notified that the request was not authorized; notification should provide sufficient information to understand the basis for denial without disclosing policy internals or creating a basis for circumvention.
 
-![lifecycle of a task](./assets/lifecycle_of_a_task.jpg)
+![lifecycle of a task]([./assets/lifecycle_of_a_task.jpg](https://github.com/decentralized-identity/governance-of-delegated-authority-report/blob/main/assets/lifecycle_of_a_task.jpg?raw=true))
 
 ## Open Research Questions and Standards Work to Watch
 
