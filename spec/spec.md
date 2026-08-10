@@ -3,7 +3,7 @@
 Specification Status: Pre-Draft
 
 Latest Draft:
-[identity.foundation/delegated-authority-report](https://identity.foundation/delegated-authority-report)
+[identity.foundation/governance-of-delegated-authority-report](https://identity.foundation/governance-of-delegated-authority-report)
 
 Ratified Versions:
 
@@ -29,7 +29,7 @@ Except where otherwise noted, this work by the [Decentralized Identity Foundatio
 - [Problem Space Report](https://identity.foundation/delegated-authority-report/)
 - [Threat Model](https://identity.foundation/delegated-authority-threat-model/)
 - Governance Considerations (You are here)
-- [Agentic-Delegation User-Story Walk-through](https://www.youtube.com/watch?v=u-uWl_s0PPM%20)
+- [Agentic-Delegation User-Story Walk-through](https://www.youtube.com/watch?v=u-uWl_s0PPM)
 
 ## Abstract
 
@@ -688,7 +688,7 @@ Throughout this chain, organizational policy governs what is requested.
 An authorization evaluation component (PDP) receives policy intent and evaluates whether proposed actions are authorized.
 Enforcement points (PEP) at each service execution boundary receive the authorization decision and permit or block the action accordingly.
 
-![flow diagram of a delegation chain](https://github.com/decentralized-identity/governance-of-delegated-authority-report/blob/main/assets/chain_flow_diagram.jpg?raw=true)
+![flow diagram of a delegation chain](https://raw.githubusercontent.com/decentralized-identity/governance-of-delegated-authority-report/main/assets/chain_flow_diagram.jpg)
 
 ### Authorization Decision and Fail-Safe Flow
 
@@ -704,7 +704,7 @@ Actions that warrant human judgment are routed to a human oversight queue.
 All executed actions are logged with their authority basis, policy version, and outcome.
 Where an action is denied, the invoker should be notified that the request was not authorized; notification should provide sufficient information to understand the basis for denial without disclosing policy internals or creating a basis for circumvention.
 
-![lifecycle of a task](https://github.com/decentralized-identity/governance-of-delegated-authority-report/blob/main/assets/lifecycle_of_a_task.jpg?raw=true)
+![lifecycle of a task](https://raw.githubusercontent.com/decentralized-identity/governance-of-delegated-authority-report/main/assets/lifecycle_of_a_task.jpg)
 
 ## Open Research Questions and Standards Work to Watch
 
