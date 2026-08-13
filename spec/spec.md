@@ -33,7 +33,7 @@ Except where otherwise noted, this work by the [Decentralized Identity Foundatio
 
 ## Abstract
 
-add text here
+This report examines the governance of delegated authority in systems where automated agents act on behalf of people and organizations. It addresses what constrains that authority as circumstances change after a delegation is made, how authority is bounded, traced, and enforced across distributed execution, and where the responsibility for those decisions sits. It is a companion to the Problem Space Report and the Threat Model, and does not itself specify a protocol.
 
 ## Status of This Document
 
