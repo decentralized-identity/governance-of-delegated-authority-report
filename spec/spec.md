@@ -153,7 +153,7 @@ The distinction between advisory participation and operational execution is ther
 
 ### Agents acting under delegated authority
 
-Where an automated system is authorized to take actions on behalf of a principal, it operates as a delegate in the sense described in Section 3.
+Where an automated system is authorized to take actions on behalf of a principal, it operates as a delegate in the sense described under Delegation of Authority.
 The authority it exercises is derived from a grant made by a principal who holds, or has itself been delegated, the relevant right to act.
 
 The scope of the system’s authority is bounded by the terms of the delegation.
@@ -544,7 +544,7 @@ Clear articulation of governance expectations provides the foundation upon which
 The references and resources below identify the standards, literature, and regulatory instruments that informed the governance arguments in this paper.
 They are organized to support further reading by working group members and to provide a foundation for standards development work in this area.
 Sources are drawn from identity and authorization frameworks, scholarship on delegation and provenance in distributed systems, and relevant legal and regulatory instruments governing accountability and non-repudiation.
-A section alignment table maps each paper section to relevant standards and implementation patterns, and a delegation representation comparison table evaluates current technical approaches against the paper's governance requirements.
+A section alignment list maps each paper section to relevant standards and implementation patterns, and a delegation representation comparison table evaluates current technical approaches against the paper's governance requirements.
 
 ### Standards and Frameworks
 
@@ -593,20 +593,20 @@ A section alignment table maps each paper section to relevant standards and impl
 
 ### Section Alignment: Governance Paper to Standards and Frameworks
 
-The table below maps each section of the paper to the most directly relevant standards, implementation patterns, and regulatory anchors.
+The list below maps each section of the paper to the most directly relevant standards, implementation patterns, and regulatory anchors.
 
-- Section 1 — Introduction. NIST AI RMF for sociotechnical risk framing. EU AI Act risk-based obligations for AI systems.
-- Section 2 — Authority in Sociotechnical Systems. Agency law concepts of principal, agent, attribution, and liability. eIDAS for digital trust services and evidentiary integrity.
-- Section 3 — Delegation of Authority. OAuth token formats including JWT profile and token exchange. Token revocation and introspection. Caveated tokens including Macaroons for attenuation. Session policies for constrained delegation.
-- Section 4 — Agents Operating Under Delegated Authority. OWASP LLM Top 10 covering prompt injection and excessive agency. MITRE ATLAS threat knowledge base. Agent tool authorization patterns using Cedar and OPA.
-- Section 5 — Authority Boundaries in Distributed Systems. PDP/PEP pattern as formalized in XACML. Relationship-based authorization using Zanzibar-style systems for distributed permissions.
-- Section 6 — Provenance, Traceability, and Accountability. EU AI Act record-keeping requirements for high-risk AI. NIST log management guidance SP 800-92. W3C PROV data model for provenance interchange. OpenTelemetry for distributed trace correlation.
-- Section 7 — Enforcement of Authority. XACML PDP/PEP separation. OPA policy as code. Cedar authorization engine. OAuth security best current practice RFC 9700. Token exchange for delegation claims. Rich Authorization Requests RFC 9396.
-- Section 8 — Risks in Delegated Authority Systems. OAuth token exchange act claim for delegation chain provenance. Caveated tokens including Macaroons and Biscuit for attenuation. Indirect prompt injection research. Cross-domain semantics gaps in authorization vocabularies.
-- Section 9 — Human Oversight in Machine-Speed Environments. EU AI Act human oversight obligations for high-risk AI. NIST AI RMF governance across the AI lifecycle.
-- Section 10 — Implications for Identity and Authorization Frameworks. OpenID Connect and SAML for identity assertions. W3C Verifiable Credentials and DIDs for portable credentials. OpenID4VCI and OpenID4VP for credential issuance and presentation. SPIFFE for workload identity across trust domains.
-- Section 11 — Operationalizing Governance Principles. ISO/IEC 27001 and ISO/IEC 42001 management system approaches. NIST log planning guidance. OAuth security best current practice.
-- Section 12 — Conclusion. GNAP evolution for next-generation delegated authorization. SD-JWT VC standardization. IETF SCITT transparency and receipt architecture for audit integrity.
+- Introduction. NIST AI RMF for sociotechnical risk framing. EU AI Act risk-based obligations for AI systems.
+- Authority in Sociotechnical Systems. Agency law concepts of principal, agent, attribution, and liability. eIDAS for digital trust services and evidentiary integrity.
+- Delegation of Authority. OAuth token formats including JWT profile and token exchange. Token revocation and introspection. Caveated tokens including Macaroons for attenuation. Session policies for constrained delegation.
+- Agents Operating Under Delegated Authority. OWASP LLM Top 10 covering prompt injection and excessive agency. MITRE ATLAS threat knowledge base. Agent tool authorization patterns using Cedar and OPA.
+- Authority Boundaries in Distributed Systems. PDP/PEP pattern as formalized in XACML. Relationship-based authorization using Zanzibar-style systems for distributed permissions.
+- Provenance, Traceability, and Accountability. EU AI Act record-keeping requirements for high-risk AI. NIST log management guidance SP 800-92. W3C PROV data model for provenance interchange. OpenTelemetry for distributed trace correlation.
+- Enforcement of Authority. XACML PDP/PEP separation. OPA policy as code. Cedar authorization engine. OAuth security best current practice RFC 9700. Token exchange for delegation claims. Rich Authorization Requests RFC 9396.
+- Risks in Delegated Authority Systems. OAuth token exchange act claim for delegation chain provenance. Caveated tokens including Macaroons and Biscuit for attenuation. Indirect prompt injection research. Cross-domain semantics gaps in authorization vocabularies.
+- Human Oversight in Machine-Speed Environments. EU AI Act human oversight obligations for high-risk AI. NIST AI RMF governance across the AI lifecycle.
+- Implications for Identity and Authorization Frameworks. OpenID Connect and SAML for identity assertions. W3C Verifiable Credentials and DIDs for portable credentials. OpenID4VCI and OpenID4VP for credential issuance and presentation. SPIFFE for workload identity across trust domains.
+- Operationalizing governance principles, a topic this paper raises across the enforcement and oversight sections rather than in one place. ISO/IEC 27001 and ISO/IEC 42001 management system approaches. NIST log planning guidance. OAuth security best current practice.
+- Conclusion. GNAP evolution for next-generation delegated authorization. SD-JWT VC standardization. IETF SCITT transparency and receipt architecture for audit integrity.
  
 ### Delegation Representation Approaches
 
