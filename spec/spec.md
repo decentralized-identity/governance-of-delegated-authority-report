@@ -1,6 +1,6 @@
 # Governance of Delegated Authority Problem Space Report v0.1 Editor's Draft
 
-Specification Status: Pre-Draft
+Specification Status: Editor's Draft
 
 Latest Draft:
 [identity.foundation/governance-of-delegated-authority-report](https://identity.foundation/governance-of-delegated-authority-report)
@@ -27,6 +27,7 @@ Except where otherwise noted, this work by the [Decentralized Identity Foundatio
 **Related Specifications:**
 
 - [Problem Space Report](https://identity.foundation/delegated-authority-report/)
+- [Specification Evaluations](https://identity.foundation/delegated-authority-evaluations)
 - [Threat Model](https://identity.foundation/delegated-authority-threat-model/)
 - Governance Considerations (You are here)
 - [Agentic-Delegation User-Story Walk-through](https://www.youtube.com/watch?v=u-uWl_s0PPM)
