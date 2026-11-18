@@ -1,4 +1,5 @@
 build
+assets/compiled/fonts/
 .vite
 .local-dev
 
