@@ -1,7 +1,8 @@
 # Governance of Delegated Authority Report
 
-## [Latest Editor's Draft](https://identity.foundation/governance-of-delegated-authority-report/)
+## Published Versions
 
+- [Latest Editor's Draft](https://identity.foundation/governance-of-delegated-authority-report/)
 - [v1.0-rc1 snapshot](https://identity.foundation/governance-of-delegated-authority-report/v1.0-rc1/)
 
 ## Getting Started
@@ -15,6 +16,7 @@ cd governance-of-delegated-authority-report
 npm ci
 npm run dev      # live preview at http://127.0.0.1:5173/
 npm run build    # static site in ./build
+npm run preview  # serve ./build at http://127.0.0.1:4173/ (not `npx serve`: it can't open snapshots in subdirectories)
 ```
 
 Pushes to `main` are built and deployed to GitHub Pages by `.github/workflows/deploy-spec.yml`.
