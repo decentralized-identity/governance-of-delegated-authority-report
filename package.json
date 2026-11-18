@@ -12,13 +12,14 @@
   },
   "scripts": {
     "build": "vite build",
+    "postbuild": "node -e \"require('fs').copyFileSync('logo.svg', 'build/logo.svg')\"",
     "dev": "vite --host 127.0.0.1 --port 5173 --strictPort",
     "dev:cert": "node ./scripts/dev-cert.mjs",
     "dev:dns": "node ./scripts/dev-dns.mjs",
     "edit": "vite build --watch",
     "refs": "node ./scripts/fetch-spec-refs.js",
     "preview": "vite preview --outDir build --host 127.0.0.1 --port 4173",
-    "render": "vite build",
+    "render": "npm run build",
     "test": "node --test test/*.test.js"
   },
   "keywords": [
