@@ -1,5 +1,7 @@
 node_modules
 dist
+!src/web-awesome/dist/
+!src/web-awesome/dist/**
 build
 .DS_Store
 .idea
