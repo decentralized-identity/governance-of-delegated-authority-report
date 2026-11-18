@@ -1,12 +1,12 @@
 {
-  "name": "template-for-work-items",
-  "description": "DIF template-for-work-items specification",
+  "name": "Spec-Up spec site builder",
+  "description": "Governance of Delegated Authority (DIF TAAWG)",
   "version": "0.0.1",
-  "homepage": "http://identity.foundation/template-for-work-items",
-  "license": "Apache 2",
+  "homepage": "http://identity.foundation/governance-of-delegated-authority-report",
+  "license": "W3C Royalty-Free License (2004)",
   "repository": {
     "type": "git",
-    "url": "git://github.com/decentralized-identity/template-for-work-items"
+    "url": "git://github.com/decentralized-identity/governance-of-delegated-authority-report"
   },
   "dependencies": {
     "markdown-it": "^9.1.0",

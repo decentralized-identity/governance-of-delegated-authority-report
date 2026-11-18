@@ -1,40 +1,43 @@
-# Governance of Delegated Authority Problem Space Report v0.1 Editor's Draft
+Governance of Delegated Authority Report v1.0 Preview
+==================
 
-Specification Status: Editor's Draft
+**Specification Status:** Working Group Consensus Draft (Pending DIF Steering Committee Approval)
 
-Latest Draft:
-[identity.foundation/governance-of-delegated-authority-report](https://identity.foundation/governance-of-delegated-authority-report)
+**Latest Draft:**
+  [https://identity.foundation/governance-of-delegated-authority-reports](https://identity.foundation/governance-of-delegated-authority-report)
 
-Ratified Versions:
+**Ratified Versions:**
+
+* [v1.0-rc1](./v1.0-rc1/): Working Group consensus, 17 November 2026
 
 Editors:
 
-- Alan Karp (@alanhkarp)
+~ [Juan Caballero](https://www.linkedin.com/in/juan-caballero/)  ([learningProof UG](https://learningproof.xyz/))
 
-Authors:
+Contributors:
 
-- Debbie Bucci
-- Victor Lu
+~ [Deb Bucci](https://www.linkedin.com/in/debbie-bucci/) ([Deb B Labs](https://docs.google.com/document/d/e/2PACX-1vQoFsZd-vSLZ0nr278sQ4t2UBK3-zrVFi1yt-uhM4u47_gOIL2LP4dd6SGEXkMBlL5dWwv08Nx9IIr4/pub))
+~ [Victor Lu](https://www.linkedin.com/in/luvictor/) - (Independent)
 
 Participate:
-~ [GitHub repo](https://github.com/decentralized-identity/governance-of-delegated-authority-report)
-~ [File a bug](https://github.com/decentralized-identity/governance-of-delegated-authority-report/issues)
-~ [Commit history](https://github.com/decentralized-identity/governance-of-delegated-authority-report/commits/main)
-~ [Working Group](https://identity.foundation/working-groups/trusted-agents.html)
 
-Except where otherwise noted, this work by the [Decentralized Identity Foundation](https://identity.foundation/) is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0).
+~ [GitHub repo](https://github.com/decentralized-identity/delegated-authority-evaluations)
+~ [File a bug](https://github.com/decentralized-identity/delegated-authority-evaluations/issues)
+~ [Commit history](https://github.com/decentralized-identity/delegated-authority-evaluations/commits/master)
 
-**Related Specifications:**
+------------------------------------
+
+## Abstract
+
+This report examines the governance of delegated authority in systems where automated agents act on behalf of people and organizations. It addresses what constrains that authority as circumstances change after a delegation is made, how authority is bounded, traced, and enforced across distributed execution, and where the responsibility for those decisions sits. It is a companion to the Problem Space Report, the Specification Evaluations, and the Threat Model, and does not itself specify a protocol.
+
+### Related Specifications
 
 - [Problem Space Report](https://identity.foundation/delegated-authority-report/)
 - [Specification Evaluations](https://identity.foundation/delegated-authority-evaluations)
 - [Threat Model](https://identity.foundation/delegated-authority-threat-model/)
 - Governance Considerations (You are here)
 - [Agentic-Delegation User-Story Walk-through](https://www.youtube.com/watch?v=u-uWl_s0PPM)
-
-## Abstract
-
-This report examines the governance of delegated authority in systems where automated agents act on behalf of people and organizations. It addresses what constrains that authority as circumstances change after a delegation is made, how authority is bounded, traced, and enforced across distributed execution, and where the responsibility for those decisions sits. It is a companion to the Problem Space Report and the Threat Model, and does not itself specify a protocol.
 
 ## Status of This Document
 
