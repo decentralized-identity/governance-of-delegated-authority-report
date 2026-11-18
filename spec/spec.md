@@ -4,7 +4,7 @@ Governance of Delegated Authority Report v1.0 Preview
 **Specification Status:** Working Group Consensus Draft (Pending DIF Steering Committee Approval)
 
 **Latest Draft:**
-  [https://identity.foundation/governance-of-delegated-authority-reports](https://identity.foundation/governance-of-delegated-authority-report)
+  [https://identity.foundation/governance-of-delegated-authority-report](https://identity.foundation/governance-of-delegated-authority-report)
 
 **Ratified Versions:**
 
@@ -21,9 +21,9 @@ Contributors:
 
 Participate:
 
-~ [GitHub repo](https://github.com/decentralized-identity/delegated-authority-evaluations)
-~ [File a bug](https://github.com/decentralized-identity/delegated-authority-evaluations/issues)
-~ [Commit history](https://github.com/decentralized-identity/delegated-authority-evaluations/commits/master)
+~ [GitHub repo](https://github.com/decentralized-identity/governance-of-delegated-authority-report)
+~ [File a bug](https://github.com/decentralized-identity/governance-of-delegated-authority-report/issues)
+~ [Commit history](https://github.com/decentralized-identity/governance-of-delegated-authority-report/commits/main)
 
 ------------------------------------
 

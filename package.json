@@ -1,13 +1,14 @@
 {
-  "name": "spec-up",
-  "version": "0.12.2",
-  "description": "Technical specification drafting tool that generates rich specification documents from markdown.",
+  "name": "governance-of-delegated-authority-report",
+  "version": "0.0.1",
+  "description": "Governance of Delegated Authority (DIF TAAWG)",
+  "private": true,
   "type": "module",
   "main": "./index.js",
   "exports": "./index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/decentralized-identity/spec-up.git"
+    "url": "git+https://github.com/decentralized-identity/governance-of-delegated-authority-report.git"
   },
   "scripts": {
     "build": "vite build",
@@ -26,12 +27,12 @@
     "editor",
     "standards"
   ],
-  "author": "Daniel Buchner",
-  "license": "Apache 2.0",
+  "author": "DIF Trusted AI Agents Working Group",
+  "license": "SEE LICENSE IN LICENSE.md",
   "bugs": {
-    "url": "https://github.com/decentralized-identity/spec-up/issues"
+    "url": "https://github.com/decentralized-identity/governance-of-delegated-authority-report/issues"
   },
-  "homepage": "https://github.com/decentralized-identity/spec-up#readme",
+  "homepage": "https://identity.foundation/governance-of-delegated-authority-report",
   "engines": {
     "node": ">=18"
   },

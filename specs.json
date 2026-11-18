@@ -1,37 +1,33 @@
 {
   "specs": [
     {
-      "title": "Delegated Authority Evaluations v1.0 Preview",
+      "title": "Governance of Delegated Authority Report Editor's Draft",
       "spec_directory": "./spec",
       "output_path": "./build/",
       "logo": "./logo.svg",
-      "logo_link": "https://github.com/decentralized-identity/delegated-authority-evaluations",
+      "logo_link": "https://identity.foundation/working-groups/trusted-agents.html",
       "source": {
         "host": "github",
         "account": "decentralized-identity",
-        "repo": "delegated-authority-evaluations"
+        "repo": "governance-of-delegated-authority-report",
+        "branch": "main",
+        "path": "spec"
       },
-      "external_specs": [
-        {
-         }
-      ],
       "katex": true
     },
     {
-      "title": "Delegated Authority Evaluations v1.0-rc1",
+      "title": "Governance of Delegated Authority Report v1.0-rc1",
       "spec_directory": "./spec/v1.0-rc1/",
       "output_path": "./build/v1.0-rc1/",
       "logo": "../logo.svg",
-      "logo_link": "https://github.com/decentralized-identity/delegated-authority-evaluations",
+      "logo_link": "https://identity.foundation/working-groups/trusted-agents.html",
       "source": {
         "host": "github",
         "account": "decentralized-identity",
-        "repo": "delegated-authority-evaluations"
+        "repo": "governance-of-delegated-authority-report",
+        "branch": "main",
+        "path": "spec/v1.0-rc1"
       },
-      "external_specs": [
-        {
-         }
-      ],
       "katex": true
     }
   ]

@@ -3,7 +3,7 @@ name: spec-up-render
 on:
   push:
     branches:
-      - master
+      - main
   workflow_dispatch:
 
 concurrency:
